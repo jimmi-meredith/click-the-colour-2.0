@@ -1,6 +1,7 @@
 body {
   background-image: url('/images/background.jpg');
   background-size: cover;
+  font-family: 'Rubik', sans-serif;
 }
 
 .header-container {
@@ -22,6 +23,18 @@ body {
   background-color: rgb(230, 230, 230);
 }
 
+.black {
+  color: black;
+}
+
+.blue {
+  color: blue;
+}
+
+.green {
+  color: green;
+}
+
 .purple {
   color: purple;
 }
@@ -30,18 +43,6 @@ body {
   color: red;
 }
 
-.black {
-  color: black;
-}
-
 .yellow {
   color: yellow;
-}
-
-.green {
-  color: green;
-}
-
-.blue {
-  color: blue;
 }
