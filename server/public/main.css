@@ -12,6 +12,16 @@ body {
   background-color: rgb(230, 230, 230);
 }
 
+.main-container {
+  text-align: center;
+  height: 500px;
+  width: 75%;
+  padding: 1em;
+  margin: auto;
+  border-radius: 1em;
+  background-color: rgb(230, 230, 230);
+}
+
 .purple {
   color: purple;
 }
