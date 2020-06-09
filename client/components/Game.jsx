@@ -17,6 +17,7 @@ const Game = props => {
 
   function getGameWord (event = null) {
     if (event) {
+      // changes gameState in the redux store if the player picks a wrong colour
       if (event.target.innerText !== wordColour) {
         return props.setGameState('fail')
       }
@@ -31,6 +32,7 @@ const Game = props => {
     setGameWord(word)
   }
 
+  // timer counting down from 15 and updating the timer in state at the same time
   function startTimer () {
     setTimeout(() => {
       let gameTime = timer - 1
@@ -46,6 +48,7 @@ const Game = props => {
     // the array is telling useEffect that it only needs to run once
   }, [])
 
+  // timer starts when component loads
   useEffect(() => {
     startTimer()
   }, [timer])
@@ -65,4 +68,5 @@ const Game = props => {
   )
 }
 
+// passing setGameState directly as an object instead of using mapDispatchToProps
 export default connect(null, { setGameState })(Game)
