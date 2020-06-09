@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 
 const Game = () => {
   const colours = ['purple', 'red', 'yellow', 'black', 'blue', 'green']
@@ -22,6 +22,12 @@ const Game = () => {
     setWordColour(newColours[getRandomNumber(newColours)])
     setGameWord(word)
   }
+
+  // useEffect is effectively componentDidMount and componentDidUpdate combined
+  useEffect(() => {
+    getGameWord()
+    // the array is telling useEffect that it only needs to run once
+  }, [])
 
   return (
     <div className='game-content'>
