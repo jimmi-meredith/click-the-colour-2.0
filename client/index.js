@@ -4,6 +4,7 @@ import { Provider } from 'react-redux'
 import { createStore } from 'redux'
 
 import App from './components/App'
+import reducers from './reducers'
 
 const store = createStore(reducers,
   // this is how we wire in the devtools in the browser (also important)
