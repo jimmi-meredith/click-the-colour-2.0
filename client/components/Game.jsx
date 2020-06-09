@@ -13,8 +13,8 @@ const Game = () => {
   }
 
   function getGameWord () {
-    let wordWord = colours[getRandomNumber(colours)]
-    getWordColour(wordWord)
+    let randomWord = colours[getRandomNumber(colours)]
+    getWordColour(randomWord)
   }
 
   function getWordColour (word) {
