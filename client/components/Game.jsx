@@ -1,6 +1,9 @@
 import React, { useState, useEffect } from 'react'
+import { connect } from 'react-redux'
 
-const Game = () => {
+import { setGameState } from '../actions'
+
+const Game = props => {
   const colours = ['purple', 'red', 'yellow', 'black', 'blue', 'green']
   // useing react hooks to set the state of the timer
   // setTimer is used to set the state value of timer
@@ -15,7 +18,7 @@ const Game = () => {
   function getGameWord (event = null) {
     if (event) {
       if (event.target.innerText !== wordColour) {
-        return
+        return props.setGameState('fail')
       }
     }
     let randomWord = colours[getRandomNumber(colours)]
@@ -62,4 +65,4 @@ const Game = () => {
   )
 }
 
-export default Game
+export default connect(null, { setGameState })(Game)
