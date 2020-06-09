@@ -23,11 +23,24 @@ const Game = () => {
     setGameWord(word)
   }
 
+  function startTimer () {
+    setTimeout(() => {
+      let gameTime = timer - 1
+      if (gameTime >= 0) {
+        setTimer(gameTime)
+      }
+    }, 1000)
+  }
+
   // useEffect is effectively componentDidMount and componentDidUpdate combined
   useEffect(() => {
     getGameWord()
     // the array is telling useEffect that it only needs to run once
   }, [])
+
+  useEffect(() => {
+    startTimer()
+  }, [timer])
 
   return (
     <div className='game-content'>
