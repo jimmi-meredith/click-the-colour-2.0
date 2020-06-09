@@ -1,19 +1,27 @@
 import React from 'react'
+import { connect } from 'react-redux'
 
 import Header from './Header'
 import LandingContent from './LandingContent'
 import Game from './Game'
 
-const Landing = () => {
+const Landing = props => {
   return (
     <>
     <Header />
     <div className='main-container'>
-      {/* <LandingContent /> */}
-      <Game />
+      {props.gameState === 'fail'
+        ? <LandingContent />
+        : <Game />}
     </div>
     </>
   )
 }
 
-export default Landing
+const mapStateToProps = state => {
+  return {
+    gameState: state.gameState
+  }
+}
+
+export default connect(mapStateToProps)(Landing)
