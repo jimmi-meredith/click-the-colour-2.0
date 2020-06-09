@@ -12,7 +12,12 @@ const Game = () => {
     return Math.floor(Math.random() * array.length)
   }
 
-  function getGameWord () {
+  function getGameWord (event = null) {
+    if (event) {
+      if (event.target.innerText !== wordColour) {
+        return
+      }
+    }
     let randomWord = colours[getRandomNumber(colours)]
     getWordColour(randomWord)
   }
