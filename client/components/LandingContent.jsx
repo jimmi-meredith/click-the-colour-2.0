@@ -3,7 +3,7 @@ import { connect } from 'react-redux'
 
 import { setGameState } from '../actions'
 
-const LandingContent = () => {
+const LandingContent = props => {
   return (
     <>
     <div className='introduction'>
@@ -13,7 +13,7 @@ const LandingContent = () => {
       <p>Get clicking!</p>
     </div>
     <div className='start-button'>
-      <button>Start Game</button>
+      <button onClick={() => props.setGameState('game')}>Start Game</button>
     </div>
     </>
   )
