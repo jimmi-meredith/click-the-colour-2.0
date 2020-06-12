@@ -1,4 +1,7 @@
 import React from 'react'
+import { connect } from 'react-redux'
+
+import { setGameState } from '../actions'
 
 const LandingContent = () => {
   return (
@@ -16,4 +19,4 @@ const LandingContent = () => {
   )
 }
 
-export default LandingContent
+export default connect(null, { setGameState })(LandingContent)
