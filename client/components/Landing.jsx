@@ -10,7 +10,7 @@ const Landing = props => {
     <>
     <Header />
     <div className='main-container'>
-      {props.gameState === 'fail'
+      {props.gameState === 'home'
         ? <LandingContent />
         : <Game />}
     </div>
