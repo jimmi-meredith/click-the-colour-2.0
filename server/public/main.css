@@ -4,6 +4,11 @@ body {
   font-family: 'Rubik', sans-serif;
 }
 
+#game-word {
+  font-size: 7em;
+  text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;
+}
+
 .header-container {
   text-align: center;
   width: 50%;

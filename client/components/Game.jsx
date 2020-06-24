@@ -58,7 +58,7 @@ const Game = props => {
       <div className='timer'>
         {timer}
       </div>
-      <div className={wordColour}>
+      <div id='game-word' className={wordColour}>
         {gameWord}
       </div>
       <div className='game-buttons'>
