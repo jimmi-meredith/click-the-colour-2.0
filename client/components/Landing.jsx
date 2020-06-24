@@ -13,7 +13,7 @@ const Landing = props => {
 
       {props.gameState === 'home' && <Home />}
       {props.gameState === 'game' && <Game />}
-
+      {/* CREATE FAIL PAGE COMPONENTS */}
     </div>
     </>
   )
