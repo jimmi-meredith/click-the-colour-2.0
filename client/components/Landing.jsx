@@ -5,6 +5,7 @@ import Header from './Header'
 import Home from './Home'
 import Game from './Game'
 import Incorrect from './Incorrect'
+import TimeUp from './TimeUp'
 
 const Landing = props => {
   return (
@@ -15,7 +16,7 @@ const Landing = props => {
       {props.gameState === 'home' && <Home />}
       {props.gameState === 'game' && <Game />}
       {props.gameState === 'incorrect' && <Incorrect />}
-      {/* CREATE FAIL PAGE COMPONENTS */}
+      {props.gameState === 'timeUp' && <TimeUp />}
     </div>
     </>
   )
