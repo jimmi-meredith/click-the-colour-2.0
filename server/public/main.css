@@ -43,6 +43,10 @@ body {
   cursor: pointer;
 }
 
+.timer {
+  font-size: 3em;
+}
+
 .black {
   color: black;
 }
