@@ -30,12 +30,12 @@ body {
 
 .start-button {
   height: 2em;
-  font-size: 30px;
+  font-size: 2em;
   width: 30%;
-  border-radius: 1em;
+  border-radius: 0.5em;
   border-width: 1px;
   text-align: center;
-  position: relative;
+  cursor: pointer;
 }
 
 .black {
