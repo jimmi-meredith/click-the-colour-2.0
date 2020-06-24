@@ -17,6 +17,7 @@ const Landing = props => {
       {props.gameState === 'game' && <Game />}
       {props.gameState === 'incorrect' && <Incorrect />}
       {props.gameState === 'timeUp' && <TimeUp />}
+
     </div>
     </>
   )
