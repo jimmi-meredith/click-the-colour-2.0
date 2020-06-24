@@ -7,6 +7,7 @@ body {
 #game-word {
   font-size: 7em;
   text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;
+  margin: 0.25em 0 0.5em 0;
 }
 
 .header-container {
@@ -46,7 +47,7 @@ body {
 .colour-button {
   height: 2em;
   font-size: 2em;
-  width: 25%;
+  width: 30%;
   border-radius: 0.5em;
   border-width: 1px;
   text-align: center;
