@@ -2,7 +2,7 @@ import React from 'react'
 import { connect } from 'react-redux'
 
 import Header from './Header'
-import LandingContent from './LandingContent'
+import Home from './Home'
 import Game from './Game'
 
 const Landing = props => {
@@ -11,7 +11,7 @@ const Landing = props => {
     <Header />
     <div className='main-container'>
 
-      {props.gameState === 'home' && <LandingContent />}
+      {props.gameState === 'home' && <Home />}
       {props.gameState === 'game' && <Game />}
 
     </div>

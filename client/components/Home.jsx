@@ -3,7 +3,7 @@ import { connect } from 'react-redux'
 
 import { setGameState } from '../actions'
 
-const LandingContent = props => {
+const Home = props => {
   return (
     <>
     <div className='introduction'>
@@ -19,4 +19,4 @@ const LandingContent = props => {
   )
 }
 
-export default connect(null, { setGameState })(LandingContent)
+export default connect(null, { setGameState })(Home)
