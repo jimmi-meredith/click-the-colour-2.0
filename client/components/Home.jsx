@@ -12,8 +12,8 @@ const Home = props => {
       <p>Not the word, but the colour... Get it? Cool.</p>
       <p>Get clicking!</p>
     </div>
-    <div className='start-button'>
-      <button onClick={() => props.setGameState('game')}>Start Game</button>
+    <div className='button'>
+      <button className='start-button' onClick={() => props.setGameState('game')}>Start Game</button>
     </div>
     </>
   )
