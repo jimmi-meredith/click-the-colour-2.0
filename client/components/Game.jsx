@@ -62,7 +62,7 @@ const Game = props => {
         {gameWord}
       </div>
       <div className='game-buttons'>
-        {colours.map(colour => <button key={colour} onClick={getGameWord}>{colour}</button>)}
+        {colours.map(colour => <button key={colour} className='colour-button' onClick={getGameWord}>{colour}</button>)}
       </div>
     </div>
   )

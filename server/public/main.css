@@ -43,6 +43,16 @@ body {
   cursor: pointer;
 }
 
+.colour-button {
+  height: 2em;
+  font-size: 2em;
+  width: 25%;
+  border-radius: 0.5em;
+  border-width: 1px;
+  text-align: center;
+  cursor: pointer;
+}
+
 .timer {
   font-size: 3em;
 }
