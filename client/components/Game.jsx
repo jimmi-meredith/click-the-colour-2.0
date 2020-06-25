@@ -42,6 +42,10 @@ const Game = props => {
     }, 1000)
   }
 
+  // function timeUp () {
+  //   return setGameState('timeUp')
+  // }
+
   // useEffect is effectively componentDidMount and componentDidUpdate combined
   useEffect(() => {
     getGameWord()
