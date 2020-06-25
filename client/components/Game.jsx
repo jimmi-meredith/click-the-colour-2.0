@@ -7,7 +7,7 @@ const Game = props => {
   const colours = ['purple', 'red', 'yellow', 'black', 'blue', 'green']
   // useing react hooks to set the state of the timer
   // setTimer is used to set the state value of timer
-  const [timer, setTimer] = useState(15)
+  const [timer, setTimer] = useState(5)
   const [gameWord, setGameWord] = useState('')
   const [wordColour, setWordColour] = useState('')
 
@@ -39,12 +39,11 @@ const Game = props => {
       if (gameTime >= 0) {
         setTimer(gameTime)
       }
+      if (gameTime === 0) {
+        props.setGameState('timeUp')
+      }
     }, 1000)
   }
-
-  // function timeUp () {
-  //   return setGameState('timeUp')
-  // }
 
   // useEffect is effectively componentDidMount and componentDidUpdate combined
   useEffect(() => {
