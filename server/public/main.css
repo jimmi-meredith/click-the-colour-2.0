@@ -23,8 +23,12 @@ body {
   background-color: rgb(230, 230, 230);
 }
 
-.heading{
+.heading {
   font-size: 5em;
+}
+
+.score {
+  font-size: 3em;
 }
 
 .main-container {
