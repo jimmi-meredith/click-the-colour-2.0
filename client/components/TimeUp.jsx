@@ -1,4 +1,7 @@
 import React from 'react'
+import { connect } from 'react-redux'
+
+import { setGameState } from '../actions'
 
 const TimeUp = () => {
   return (
@@ -10,4 +13,4 @@ const TimeUp = () => {
   )
 }
 
-export default TimeUp
+export default connect(null, { setGameState })(TimeUp)
