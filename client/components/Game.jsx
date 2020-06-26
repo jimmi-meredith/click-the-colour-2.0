@@ -7,7 +7,7 @@ const Game = props => {
   const colours = ['purple', 'red', 'yellow', 'black', 'blue', 'green']
   // useing react hooks to set the state of the timer
   // setTimer is used to set the state value of timer
-  const [timer, setTimer] = useState(15)
+  const [timer, setTimer] = useState(3)
   const [gameWord, setGameWord] = useState('')
   const [wordColour, setWordColour] = useState('')
 
