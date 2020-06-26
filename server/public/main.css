@@ -23,6 +23,10 @@ body {
   background-color: rgb(230, 230, 230);
 }
 
+.heading{
+  font-size: 5em;
+}
+
 .main-container {
   text-align: center;
   height: 30em;
