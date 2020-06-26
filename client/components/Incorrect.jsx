@@ -5,6 +5,7 @@ const Incorrect = () => {
     <div className='incorrect'>
       <h1 className='heading'>Oops!</h1>
       <p className='score'>Your final score is </p>
+      <button>Try Again</button>
     </div>
   )
 }
