@@ -1,4 +1,5 @@
 import React from 'react'
+import { connect } from 'react-redux'
 
 const Incorrect = () => {
   return (
@@ -10,4 +11,4 @@ const Incorrect = () => {
   )
 }
 
-export default Incorrect
+export default connect()(Incorrect)
