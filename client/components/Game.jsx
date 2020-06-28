@@ -56,6 +56,11 @@ const Game = props => {
     startTimer()
   }, [timer])
 
+  handleClick = () => {
+    getGameWord()
+    props.updateScore()
+  }
+
   return (
     <div className='game-content'>
       <div className='timer'>
