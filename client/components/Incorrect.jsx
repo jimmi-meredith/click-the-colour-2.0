@@ -1,6 +1,8 @@
 import React from 'react'
 import { connect } from 'react-redux'
 
+import { setGameState } from '../actions'
+
 const Incorrect = () => {
   return (
     <div className='incorrect'>
@@ -11,4 +13,4 @@ const Incorrect = () => {
   )
 }
 
-export default connect()(Incorrect)
+export default connect(null, { setGameState })(Incorrect)
