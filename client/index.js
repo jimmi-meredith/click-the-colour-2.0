@@ -13,7 +13,7 @@ const store = createStore(reducers,
 
 document.addEventListener('DOMContentLoaded', () => {
   render(
-    // passing the sotre as props into provider so it can be used in everything in the app
+    // passing the store as props into provider so it can be used in everything in the app
     <Provider store={store}>
       <App />
     </Provider>,
