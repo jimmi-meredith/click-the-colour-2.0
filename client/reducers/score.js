@@ -1,6 +1,6 @@
 import { UPDATE_SCORE } from '../actions'
 
-const updateScore = (state = 0, action) => {
+const score = (state = 0, action) => {
   switch (action.type) {
     case UPDATE_SCORE:
       return action.score
@@ -9,4 +9,4 @@ const updateScore = (state = 0, action) => {
   }
 }
 
-export default updateScore
+export default score
