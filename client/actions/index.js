@@ -8,9 +8,8 @@ export const setGameState = gameState => {
   }
 }
 
-export const updateScore = score => {
+export const updateScore = () => {
   return {
-    type: UPDATE_SCORE,
-    score
+    type: UPDATE_SCORE
   }
 }
