@@ -1,9 +1,9 @@
 import { combineReducers } from 'redux'
 
 import gameState from './gameState'
-import updateScore from './updateScore'
+import score from './score'
 
 export default combineReducers({
   gameState,
-  updateScore
+  score
 })
