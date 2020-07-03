@@ -21,6 +21,7 @@ const Game = props => {
       if (event.target.innerText !== wordColour) {
         return props.setGameState('incorrect')
       }
+      // insert here
     }
     let randomWord = colours[getRandomNumber(colours)]
     getWordColour(randomWord)
