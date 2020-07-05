@@ -13,4 +13,10 @@ const Incorrect = props => {
   )
 }
 
+mapStateToProps = state => {
+  return {
+    score: state.score
+  }
+}
+
 export default connect(null, { setGameState })(Incorrect)
