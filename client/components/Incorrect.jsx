@@ -19,4 +19,4 @@ const mapStateToProps = state => {
   }
 }
 
-export default connect(null, { setGameState })(Incorrect)
+export default connect(mapStateToProps, { setGameState })(Incorrect)
