@@ -5,7 +5,7 @@ const score = (state = 0, action) => {
     case UPDATE_SCORE:
       return state + 1
     case RESET_SCORE:
-      return state
+      return 0
     default:
       return state
   }
