@@ -1,4 +1,4 @@
-import { UPDATE_SCORE } from '../actions'
+import { UPDATE_SCORE, RESET_SCORE } from '../actions'
 
 const score = (state = 0, action) => {
   switch (action.type) {
