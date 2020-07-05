@@ -13,3 +13,9 @@ export const updateScore = () => {
     type: UPDATE_SCORE
   }
 }
+
+export const resetScore = () => {
+  return {
+    type: RESET_SCORE
+  }
+}
