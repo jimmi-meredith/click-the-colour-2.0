@@ -13,7 +13,7 @@ const Incorrect = props => {
   )
 }
 
-mapStateToProps = state => {
+const mapStateToProps = state => {
   return {
     score: state.score
   }
