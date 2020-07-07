@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import { connect } from 'react-redux'
 
-import { setGameState, updateScore, resetScore } from '../actions'
+import { setGameState, updateScore } from '../actions'
 
 const Game = props => {
   const colours = ['purple', 'red', 'yellow', 'black', 'blue', 'green']
@@ -75,4 +75,4 @@ const Game = props => {
 }
 
 // passing setGameState directly as an object instead of using mapDispatchToProps
-export default connect(null, { setGameState, updateScore, resetScore })(Game)
+export default connect(null, { setGameState, updateScore })(Game)
