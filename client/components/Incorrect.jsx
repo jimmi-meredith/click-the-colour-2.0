@@ -4,6 +4,11 @@ import { connect } from 'react-redux'
 import { setGameState, resetScore } from '../actions'
 
 const Incorrect = props => {
+  // handleClick = () => {
+  //   props.setGameState('game')
+  //   props.resetScore()
+  // }
+
   return (
     <div className='incorrect'>
       <h1 className='heading'>Oops!</h1>
