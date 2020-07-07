@@ -6,6 +6,11 @@ import { setGameState, resetScore } from '../actions'
 const TimeUp = props => {
   const { setGameState, resetScore, score } = props
 
+  const handleClick = () => {
+    setGameState('game')
+    resetScore()
+  }
+
   return (
     <div className='time-up'>
       <h1 className='heading'>Time is up!</h1>
