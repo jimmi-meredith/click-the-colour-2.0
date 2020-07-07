@@ -4,16 +4,16 @@ import { connect } from 'react-redux'
 import { setGameState, resetScore } from '../actions'
 
 const Incorrect = props => {
-  // handleClick = () => {
-  //   props.setGameState('game')
-  //   props.resetScore()
-  // }
+  const handleClick = () => {
+    props.setGameState('game')
+    props.resetScore()
+  }
 
   return (
     <div className='incorrect'>
       <h1 className='heading'>Oops!</h1>
       <p className='score'>Your final score is {props.score}</p>
-      <button className='start-button' onClick={() => props.setGameState('game')}>Try Again</button>
+      <button className='start-button' onClick={() => handleClick()}>Try Again</button>
     </div>
   )
 }
