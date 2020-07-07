@@ -45,6 +45,7 @@ const Game = props => {
       }
       if (gameTime === 0) {
         props.setGameState('timeUp')
+        props.resetScore()
       }
     }, 1000)
   }
