@@ -4,6 +4,8 @@ import { connect } from 'react-redux'
 import { setGameState, resetScore } from '../actions'
 
 const TimeUp = props => {
+  const { setGameState, resetScore, score } = props
+
   return (
     <div className='time-up'>
       <h1 className='heading'>Time is up!</h1>
