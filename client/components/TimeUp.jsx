@@ -15,7 +15,7 @@ const TimeUp = props => {
     <div className='time-up'>
       <h1 className='heading'>Time is up!</h1>
       <p className='score'>Your final score is {score}</p>
-      <button className='start-button' onClick={() => props.setGameState('game')}>Try Again</button>
+      <button className='start-button' onClick={() => handleClick()}>Try Again</button>
     </div>
   )
 }
