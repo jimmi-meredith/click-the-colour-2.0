@@ -1,7 +1,7 @@
 import React from 'react'
 import { connect } from 'react-redux'
 
-import { setGameState } from '../actions'
+import { setGameState, resetScore } from '../actions'
 
 const TimeUp = props => {
   return (
@@ -13,4 +13,4 @@ const TimeUp = props => {
   )
 }
 
-export default connect(null, { setGameState })(TimeUp)
+export default connect(null, { setGameState, resetScore })(TimeUp)
