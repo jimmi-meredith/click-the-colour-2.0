@@ -23,7 +23,6 @@ const Game = props => {
       // changes gameState in the redux store if the player picks a wrong colour
       if (event.target.innerText !== wordColour) {
         props.setGameState('incorrect')
-        props.resetScore()
       }
     }
     let randomWord = colours[getRandomNumber(colours)]
