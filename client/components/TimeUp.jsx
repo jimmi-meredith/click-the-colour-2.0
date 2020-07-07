@@ -13,4 +13,10 @@ const TimeUp = props => {
   )
 }
 
-export default connect(null, { setGameState, resetScore })(TimeUp)
+const mapStateToProps = state => {
+  return {
+    score: state.score
+  }
+}
+
+export default connect(mapStateToProps, { setGameState, resetScore })(TimeUp)
