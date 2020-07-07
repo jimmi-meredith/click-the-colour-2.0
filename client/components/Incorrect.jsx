@@ -1,7 +1,7 @@
 import React from 'react'
 import { connect } from 'react-redux'
 
-import { setGameState } from '../actions'
+import { setGameState, resetScore } from '../actions'
 
 const Incorrect = props => {
   return (
@@ -19,4 +19,4 @@ const mapStateToProps = state => {
   }
 }
 
-export default connect(mapStateToProps, { setGameState })(Incorrect)
+export default connect(mapStateToProps, { setGameState, resetScore })(Incorrect)
