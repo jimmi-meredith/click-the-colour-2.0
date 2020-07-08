@@ -20,3 +20,9 @@ export const resetScore = () => {
     type: RESET_SCORE
   }
 }
+
+export const updateLevel = () => {
+  return {
+    type: UPDATE_LEVEL
+  }
+}
