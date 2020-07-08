@@ -6,5 +6,6 @@ import level from './level'
 
 export default combineReducers({
   gameState,
-  score
+  score,
+  level
 })
