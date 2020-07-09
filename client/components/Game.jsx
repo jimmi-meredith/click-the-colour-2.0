@@ -62,7 +62,7 @@ const Game = props => {
   return (
     <div className='game-content'>
       <div className='level'>
-
+        Level {props.level}
       </div>
       <div className='timer'>
         {timer}
