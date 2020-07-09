@@ -44,15 +44,16 @@ const Game = props => {
       }
       if (gameTime === 0) {
         props.setGameState('timeUp')
+        increaseLevel(props.score, props.level)
       }
     }, 1000)
   }
 
-  // function increaseLevel (score, level) {
-  //   if (score >= 7) {
-  //     return level + 1
-  //   }
-  // }
+  function increaseLevel (score, level) {
+    if (score >= 7) {
+      return level + 1
+    }
+  }
 
   // useEffect is effectively componentDidMount and componentDidUpdate combined
   useEffect(() => {
