@@ -61,6 +61,9 @@ const Game = props => {
 
   return (
     <div className='game-content'>
+      <div className='level'>
+
+      </div>
       <div className='timer'>
         {timer}
       </div>
