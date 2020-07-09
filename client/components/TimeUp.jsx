@@ -11,6 +11,12 @@ const TimeUp = props => {
     resetScore()
   }
 
+  // function increaseLevel (score, level) {
+  //   if (score >= 7) {
+  //     return level + 1
+  //   }
+  // }
+
   return (
     <div className='time-up'>
       <h1 className='heading'>Time is up!</h1>
