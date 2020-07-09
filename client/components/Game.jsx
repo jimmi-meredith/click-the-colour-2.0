@@ -49,11 +49,11 @@ const Game = props => {
     }, 1000)
   }
 
-  // function increaseLevel (score, level) {
-  //   if (score >= 7) {
-  //     return level + 1
-  //   }
-  // }
+  function increaseLevel (score) {
+    if (score >= 7) {
+      updateLevel()
+    }
+  }
 
   // useEffect is effectively componentDidMount and componentDidUpdate combined
   useEffect(() => {
