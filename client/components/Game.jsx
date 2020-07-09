@@ -74,5 +74,11 @@ const Game = props => {
   )
 }
 
+const mapStateToProps = state => {
+  return {
+    level: state.level
+  }
+}
+
 // passing setGameState directly as an object instead of using mapDispatchToProps
 export default connect(null, { setGameState, updateScore })(Game)
