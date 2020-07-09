@@ -27,6 +27,10 @@ body {
   font-size: 5em;
 }
 
+.timer {
+  margin-top: 0.25em;
+}
+
 .score {
   font-size: 3em;
 }
