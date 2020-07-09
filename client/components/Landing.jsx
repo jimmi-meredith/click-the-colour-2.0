@@ -8,16 +8,16 @@ import Incorrect from './Incorrect'
 import TimeUp from './TimeUp'
 
 const Landing = props => {
-  // const { gameState } = props
+  const { gameState } = props
   return (
     <>
     <Header />
     <div className='main-container'>
 
-      {props.gameState === 'home' && <Home />}
-      {props.gameState === 'game' && <Game />}
-      {props.gameState === 'incorrect' && <Incorrect />}
-      {props.gameState === 'timeUp' && <TimeUp />}
+      {gameState === 'home' && <Home />}
+      {gameState === 'game' && <Game />}
+      {gameState === 'incorrect' && <Incorrect />}
+      {gameState === 'timeUp' && <TimeUp />}
 
     </div>
     </>
