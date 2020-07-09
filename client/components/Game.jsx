@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import { connect } from 'react-redux'
 
-import { setGameState, updateScore } from '../actions'
+import { setGameState, updateScore, updateLevel } from '../actions'
 
 const Game = props => {
   const colours = ['purple', 'red', 'yellow', 'black', 'blue', 'green']
