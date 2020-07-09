@@ -44,16 +44,16 @@ const Game = props => {
       }
       if (gameTime === 0) {
         props.setGameState('timeUp')
-        increaseLevel(props.score, props.level)
+        // increaseLevel(props.score, props.level)
       }
     }, 1000)
   }
 
-  function increaseLevel (score, level) {
-    if (score >= 7) {
-      return level + 1
-    }
-  }
+  // function increaseLevel (score, level) {
+  //   if (score >= 7) {
+  //     return level + 1
+  //   }
+  // }
 
   // useEffect is effectively componentDidMount and componentDidUpdate combined
   useEffect(() => {
@@ -92,4 +92,4 @@ const mapStateToProps = state => {
 }
 
 // passing setGameState directly as an object instead of using mapDispatchToProps
-export default connect(mapStateToProps, { setGameState, updateScore })(Game)
+export default connect(mapStateToProps, { setGameState, updateScore, updateLevel })(Game)
