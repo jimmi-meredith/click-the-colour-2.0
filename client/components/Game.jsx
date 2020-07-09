@@ -85,6 +85,7 @@ const Game = props => {
 
 const mapStateToProps = state => {
   return {
+    score: state.score,
     level: state.level
   }
 }
