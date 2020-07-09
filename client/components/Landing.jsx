@@ -8,6 +8,7 @@ import Incorrect from './Incorrect'
 import TimeUp from './TimeUp'
 
 const Landing = props => {
+  // const { gameState } = props
   return (
     <>
     <Header />
