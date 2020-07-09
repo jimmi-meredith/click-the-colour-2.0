@@ -48,6 +48,12 @@ const Game = props => {
     }, 1000)
   }
 
+  // function increaseLevel (score, level) {
+  //   if (score >= 7) {
+  //     return level + 1
+  //   }
+  // }
+
   // useEffect is effectively componentDidMount and componentDidUpdate combined
   useEffect(() => {
     getGameWord()
