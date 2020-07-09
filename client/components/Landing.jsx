@@ -26,7 +26,8 @@ const Landing = props => {
 
 const mapStateToProps = state => {
   return {
-    gameState: state.gameState
+    gameState: state.gameState,
+    score: state.score
   }
 }
 
