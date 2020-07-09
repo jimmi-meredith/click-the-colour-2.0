@@ -44,14 +44,14 @@ const Game = props => {
       }
       if (gameTime === 0) {
         props.setGameState('timeUp')
-        // increaseLevel(props.score, props.level)
+        increaseLevel(props.score)
       }
     }, 1000)
   }
 
   function increaseLevel (score) {
     if (score >= 7) {
-      updateLevel()
+      props.updateLevel()
     }
   }
 
