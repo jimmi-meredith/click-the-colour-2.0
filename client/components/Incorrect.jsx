@@ -4,7 +4,7 @@ import { connect } from 'react-redux'
 import { setGameState, resetScore } from '../actions'
 
 const Incorrect = props => {
-  const { setGameState, resetScore, score } = props
+  const { setGameState, resetScore, score, level } = props
 
   const handleClick = () => {
     setGameState('game')
