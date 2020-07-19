@@ -4,7 +4,7 @@ import { connect } from 'react-redux'
 import { setGameState, resetScore } from '../actions'
 
 const TimeUp = props => {
-  const { setGameState, resetScore, score } = props
+  const { setGameState, resetScore, score, level } = props
 
   const handleClick = () => {
     setGameState('game')
