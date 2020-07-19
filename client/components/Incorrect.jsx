@@ -23,7 +23,8 @@ const Incorrect = props => {
 
 const mapStateToProps = state => {
   return {
-    score: state.score
+    score: state.score,
+    level: state.level
   }
 }
 
