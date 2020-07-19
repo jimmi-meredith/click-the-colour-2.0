@@ -15,7 +15,7 @@ const Incorrect = props => {
     <div className='incorrect'>
       <h1 className='heading'>Oops!</h1>
       <p className='score'>Your final score is {score}</p>
-      <p>Your max level reached was (lever here)</p>
+      <p>Your max level reached was {level}</p>
       <button className='start-button' onClick={() => handleClick()}>Try Again</button>
     </div>
   )
