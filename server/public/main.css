@@ -35,6 +35,10 @@ body {
   font-size: 3em;
 }
 
+.level-text{
+  font-size: 3em;
+}
+
 .main-container {
   text-align: center;
   height: 30em;
