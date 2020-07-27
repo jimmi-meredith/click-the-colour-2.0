@@ -11,6 +11,7 @@ const Game = props => {
   const [gameWord, setGameWord] = useState('')
   const [wordColour, setWordColour] = useState('')
 
+  // gets a random number between 0 & 5
   function getRandomNumber (array) {
     return Math.floor(Math.random() * array.length)
   }
