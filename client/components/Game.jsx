@@ -56,6 +56,7 @@ const Game = props => {
       // when the time is up update gamestate to be timeUp
       if (gameTime === 0) {
         props.setGameState('timeUp')
+        // increase the level taking in the score from props
         increaseLevel(props.score)
       }
     }, 1000)
