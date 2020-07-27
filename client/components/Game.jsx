@@ -40,6 +40,7 @@ const Game = props => {
   function getWordColour (word) {
     // newColours is a new colours array with the gameword colour filtered out
     let newColours = colours.filter(colour => colour !== word)
+    // change the wordColour state to be generated the same way as the word colour is done so
     setWordColour(newColours[getRandomNumber(newColours)])
     setGameWord(word)
   }
