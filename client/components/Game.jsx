@@ -17,6 +17,7 @@ const Game = props => {
   }
 
   // generates a random word to display for the game
+  // takes an event which has a defult of null
   function getGameWord (event = null) {
     if (event) {
       if (event.target.innerText === wordColour) {
