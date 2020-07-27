@@ -36,6 +36,7 @@ const Game = props => {
     getWordColour(randomWord)
   }
 
+  // takes a word and generates a random colour class to assign it
   function getWordColour (word) {
     let newColours = colours.filter(colour => colour !== word)
     setWordColour(newColours[getRandomNumber(newColours)])
