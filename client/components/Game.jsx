@@ -21,6 +21,7 @@ const Game = props => {
   function getGameWord (event = null) {
     // if an event exists then this happens
     if (event) {
+      // if the html text is equal to the state of the game word colour then update the score
       if (event.target.innerText === wordColour) {
         props.updateScore()
       }
