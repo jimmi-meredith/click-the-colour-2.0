@@ -60,6 +60,7 @@ const Game = props => {
     }, 1000)
   }
 
+  // takes in a score and determines whether to increase the level if the score is above or equal to 7
   function increaseLevel (score) {
     if (score >= 7) {
       props.updateLevel()
