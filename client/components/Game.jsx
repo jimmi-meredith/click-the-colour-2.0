@@ -32,6 +32,7 @@ const Game = props => {
     }
     // a new variable which is a random index number of the global colours array length of that array
     let randomWord = colours[getRandomNumber(colours)]
+    // pass the randomword variable into getWord colour function
     getWordColour(randomWord)
   }
 
